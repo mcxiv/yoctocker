@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt -y update && \
     apt -y install gawk wget git-core diffstat unzip texinfo gcc-multilib \
     build-essential chrpath socat cpio python3 python3-pip python3-pexpect \
-    xz-utils debianutils iputils-ping libsdl1.2-dev xterm
+    xz-utils debianutils iputils-ping libsdl1.2-dev xterm zstd liblz4-tool
 
 # Install missing packages file and locales
 RUN apt -y install file locales
